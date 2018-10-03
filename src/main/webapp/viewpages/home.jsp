@@ -1,6 +1,6 @@
 <html>
 <body>
-Welcome, ${nameAttribute}
+Welcome, ${nameAttribute.id}, ${nameAttribute.name}, ${nameAttribute.lang}
 </body>
 
 

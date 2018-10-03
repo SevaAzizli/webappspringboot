@@ -12,14 +12,13 @@ public class HomeController {
 
 
     @RequestMapping("home")
-    public ModelAndView home(@RequestParam("name") String myname){
+    public ModelAndView home(Alien theAlien){
 
-        System.out.println("Hi, "+myname);
+        System.out.println("Hi, "+theAlien);
 
         ModelAndView modelAndView = new ModelAndView(  );
-        modelAndView.addObject( "nameAttribute" ,myname);
+       modelAndView.addObject("nameAttribute", theAlien );
         modelAndView.setViewName( "home" );
-
         return modelAndView;
     }
 
